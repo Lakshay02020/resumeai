@@ -8,7 +8,7 @@ export async function POST(req: Request) {
     const options = {
       amount: amount,
       currency: "INR",
-      receipt: `receipt_${profileId}`,
+      receipt: profileId,
       notes: { profileId }
     };
 
