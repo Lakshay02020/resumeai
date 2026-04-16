@@ -37,7 +37,7 @@ function SuccessContent() {
         transition={{ delay: 0.3 }}
         className="text-muted-foreground text-lg mb-10"
       >
-        You're all set! Our experts have received your application and will begin crafting your ATS-optimized resume. 
+        You&apos;re all set! Our experts have received your application and will begin crafting your ATS-optimized resume. 
         You will receive an email within 24 hours with the final PDF.
       </motion.p>
       

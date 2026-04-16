@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 
 export default function AdminDashboard() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [profiles, setProfiles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 

@@ -3,32 +3,21 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   FileText, 
   Zap, 
   ShieldCheck, 
-  Target, 
   CheckCircle2, 
   ArrowRight,
   TrendingUp,
   Award,
   Users
 } from "lucide-react";
-import Image from "next/image";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.5 }
-};
-
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
 };
 
 export default function LandingPage() {
@@ -138,7 +127,7 @@ export default function LandingPage() {
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">Revolutionize Your Career Search</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-medium">
-              We've simplified the entire process so you can focus on mastering your skills.
+              We&apos;ve simplified the entire process so you can focus on mastering your skills.
             </p>
           </div>
 

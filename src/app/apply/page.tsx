@@ -135,6 +135,7 @@ export default function ApplyPage() {
         name: "ResumeAI",
         description: "Expert ATS Resume Creation",
         order_id: orderData.orderId,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         handler: async function (paymentResponse: any) {
           const verifyRes = await fetch("/api/payment/verify", {
             method: "POST",
@@ -161,6 +162,7 @@ export default function ApplyPage() {
         theme: { color: "#4f46e5" },
       };
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const paymentObject = new (window as any).Razorpay(options);
       paymentObject.open();
 
@@ -456,7 +458,7 @@ export default function ApplyPage() {
                         </div>
                         <div>
                           <p className="font-bold text-amber-900">One final step!</p>
-                          <p className="text-sm text-amber-800 font-medium">After clicking 'Pay & Submit', our experts will begin crafting your resume. Payment is required one-time to receive the optimized PDF.</p>
+                          <p className="text-sm text-amber-800 font-medium">After clicking &apos;Pay &amp; Submit&apos;, our experts will begin crafting your resume. Payment is required one-time to receive the optimized PDF.</p>
                         </div>
                       </div>
                     </div>
